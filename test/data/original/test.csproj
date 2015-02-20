@@ -38,15 +38,19 @@
     </Reference>
     <Reference Include="My.Message, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\My.Message.2.2\lib\40\Microsoft.Exchange.WebServices.dll</HintPath>
+      <HintPath>..\packages\My.Message.2.2\lib\40\My.Message.dll</HintPath>
     </Reference>
     <Reference Include="My.Message, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL, Version=2.2.0.0">
       <Private>True</Private>
-      <HintPath>..\packages\My.Message.2.2\lib\40\Microsoft.Exchange.WebServices.dll</HintPath>
+      <HintPath>..\packages\My.Message.2.2\lib\40\My.Message.dll</HintPath>
     </Reference>
+    <Reference Include="My.Message, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL, Version=2.2.0.0-test">
+      <Private>True</Private>
+      <HintPath>..\packages\My.Message.2.2-test\lib\40\My.Message.dll</HintPath>
+    </Reference>    
     <Reference Include="My.Message, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\My.Message.2.2\lib\40\Microsoft.Exchange.WebServices.dll</HintPath>
+      <HintPath>..\packages\My.Message.2.2\lib\40\My.Message.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

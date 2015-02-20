@@ -25,9 +25,9 @@ exports.bump = function(options, done) {
     throw new Error('Bad configuration!');
   }
 
-  var hintPathRegex = new RegExp('(' + options.packageName + '.)[0-9.]+', 'g');
-  var includeRegex = new RegExp('(Include="' + options.packageName + ',.+Version=)[0-9.]+(.*">)', 'g');
-  var packageConfigRegex = new RegExp('(package id="' + options.packageName + '".+version=")[0-9.]+(".*/>)', 'g');
+  var hintPathRegex = new RegExp('(' + options.packageName + '.)[0-9A-Za-z-.]+\\\\', 'g');
+  var includeRegex = new RegExp('(Include="' + options.packageName + ',.+Version=)[0-9A-Za-z-.]+(.*">)', 'g');
+  var packageConfigRegex = new RegExp('(package id="' + options.packageName + '".+version=")[0-9A-Za-z-.]+(".*/>)', 'g');
 
   recursive(options.path, function (err, files) {
     
@@ -36,7 +36,7 @@ exports.bump = function(options, done) {
       return readFile(fileName)
                         .then(function (data) {
                           var result = data
-                                        .replace(hintPathRegex, '$1' + options.newVersion)
+                                        .replace(hintPathRegex, '$1' + options.newVersion + '\\')
                                         .replace(includeRegex, '$1' + options.newVersion + '$2')
                                         .replace(packageConfigRegex, '$1' + options.newVersion + '$2');
                           return writeFile(fileName, result);
