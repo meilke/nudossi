@@ -31,7 +31,7 @@ exports.bump = function(options, done) {
 
   recursive(options.path, function (err, files) {
     
-    filteredFiles = _.filter(files, function (file) { return _.includes(file, '.csproj') || _.includes(file, 'package.config'); });
+    filteredFiles = _.filter(files, function (file) { return _.includes(file, '.csproj') || _.includes(file, 'packages.config'); });
     var promises = filteredFiles.map(function (fileName) {
       return readFile(fileName)
                         .then(function (data) {

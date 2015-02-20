@@ -7,9 +7,18 @@
 
 # nudossi
 
-This will bump versions for NuGet dependencies in *.csproj and package.config files.
+This will bump versions for NuGet dependencies in *.csproj and packages.config files.
 
 ## Getting started
+
+Do this to run it
+
+```bash
+$ npm install
+$ grunt nudossi --packageName="My.Message" --newVersion="2.7.0" --path=test/data/destination/
+```
+
+If you want to use it in your Grunt pipeline:
 
 ```bash
 $ npm install nudossi --save-dev

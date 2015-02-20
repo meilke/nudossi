@@ -1,6 +1,10 @@
 module.exports = function(grunt) {
   var files = [ 'tasks/**/*.js', 'test/**/*.js' ];
 
+  var packageName = grunt.option('packageName');
+  var newVersion = grunt.option('newVersion');
+  var path = grunt.option('path');
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     jshint: { 
@@ -17,6 +21,14 @@ module.exports = function(grunt) {
     },
     release: {
       options: { commitMessage: 'NPM Release v<%= version %>' }
+    },
+    nudossi: {
+      options: {
+        packageName: packageName,
+        newVersion: newVersion,
+        path: path
+      },
+      do: {}
     }
   });
 

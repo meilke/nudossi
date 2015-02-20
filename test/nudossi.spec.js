@@ -53,11 +53,11 @@ describe('nudossi', function () {
     });
   });
 
-  it('works correctly on package.config files', function (done) {
+  it('works correctly on packages.config files', function (done) {
     var options = { packageName: 'My.Message', newVersion: '2.7.0', path: 'test/data/destination/' };
     ncp('test/data/original/', 'test/data/destination/', function (err) {
       nudossi.bump(options, function () {
-        fs.readFile('test/data/destination/sub/package.config', 'utf8', function (err, data) {
+        fs.readFile('test/data/destination/sub/packages.config', 'utf8', function (err, data) {
           expect(_.includes(data, 'id="My.Message" version="2.7.0"')).to.be(true);
           expect(_.includes(data, 'id="My.Message" version="2.2.2"')).to.be(false);
           done();
