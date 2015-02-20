@@ -1,6 +1,8 @@
 [![Build Status](https://api.travis-ci.org/meilke/nudossi.png)](https://travis-ci.org/meilke/nudossi)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![NPM version](https://badge.fury.io/js/nudossi.svg)](http://badge.fury.io/js/nudossi)  
+[![Code Climate](https://codeclimate.com/github/meilke/nudossi/badges/gpa.svg)](https://codeclimate.com/github/meilke/nudossi)
+[![Test Coverage](https://codeclimate.com/github/meilke/nudossi/badges/coverage.svg)](https://codeclimate.com/github/meilke/nudossi)  
 [![Dependency Status](https://david-dm.org/meilke/nudossi.svg)](https://david-dm.org/meilke/nudossi)
 [![devDependency Status](https://david-dm.org/meilke/nudossi/dev-status.svg)](https://david-dm.org/meilke/nudossi#info=devDependencies)  
 [![forthebadge](http://forthebadge.com/images/badges/uses-badges.svg)](http://forthebadge.com)
