@@ -1,6 +1,6 @@
 {
   "name": "nudossi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grunt plugin for bumping NuGet references in project files and configs",
   "homepage": "https://github.com/meilke/nudossi",
   "main": "tasks/task.js",
