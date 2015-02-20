@@ -1,0 +1,43 @@
+{
+  "name": "nudossi",
+  "version": "0.0.1",
+  "description": "Grunt plugin for bumping NuGet references in project files and configs",
+  "homepage": "https://github.com/meilke/nudossi",
+  "main": "tasks/task.js",
+  "author": "Christian Meilke",
+  "readmeFilename": "README.md",
+  "files": [
+    "tasks/**/*.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "bugs": {
+    "url": "https://github.com/meilke/nudossi/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meilke/nudossi.git"
+  },
+  "keywords": [
+    "grunt",
+    ".net",
+    "dotnet",
+    "nuget"
+  ],
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-mocha-test": "^0.12.7",
+    "grunt-release": "^0.11.0",
+    "mocha": "^2.1.0",
+    "ncp": "^1.0.1",
+    "sinon": "^1.12.2"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.12",
+    "lodash": "^3.2.0",
+    "q": "^1.1.2",
+    "recursive-readdir": "^1.2.1"
+  }
+}
